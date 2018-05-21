@@ -22,7 +22,7 @@
 - name: Update logstash-input-udp to latest version
   command: /usr/share/logstash/bin/logstash-plugin update logstash-input-udp
   become: true
-
+  ignore_errors: true 
 - name: Copy logstash filter configuration
   template:
     src=logstash.conf.j2
