@@ -3,7 +3,7 @@
 # Playbook to install the ELK stack
 #
 
-- hosts: elk
+- hosts: all
   remote_user: "{{ ansible_system_user }}"
   vars_files:
     - group_vars/all.yml
